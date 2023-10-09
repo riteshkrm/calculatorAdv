@@ -2,24 +2,26 @@
 
 /************ Backgrounds ************/
 :root{
---VeryDarkDesaturatedBlue : #3a4764; /* (main background) */
---VeryDarkDesaturatedBlue : #232c43; /* (toggle background, keypad background) */
---VeryDarkDesaturatedBlue : #182034; /* (screen background) */
+--mainBackgroundOne  : #3a4764; /* (VeryDarkDesaturatedBlue) */
+--toggleBackgroundOne: #232c43; /* (VeryDarkDesaturatedBlue ) */
+--keypadBackgroundOne : #232c43; /* (VeryDarkDesaturatedBlue ) */
+--screenBackgroundOne : #182034; /* (VeryDarkDesaturatedBlue) */
 
 /*********** Keys ************/
 
---DesaturatedDarkBlue : #637097; /* (key background) */
---DesaturatedDarkBlue : #404e72; /* (key shadow) */
+--keyBackgroundOne : #637097; /* (DesaturatedDarkBlue) */
+--keyShadowOne : #404e72; /* (DesaturatedDarkBlue ) */
 
---Red : #d03f2f; /* (key background, toggle) */
---DarkRed : #93261a; /* (key shadow) */
+--keyBackgroundOne : #d03f2f; /* (Red) */
+--toggleBackgroundOne : #d03f2f; /* (Red) */
+--keyShadowOne : #93261a; /* (DarkRed) */
 
---LightGrayishOrange : #eae3dc; /* (key background) */
---GrayishOrange : #b4a597; /* (key shadow) */
+--keyBackgroundOne : #eae3dc; /* (LightGrayishOrange */
+--keyShadowOne : #b4a597; /* (GrayishOrange ) */
 
 /************ Text ************/
 
---VeryDarkGrayishBlue: #444b5a;
+--textOne: #444b5a; /* VeryDarkGrayishBlueOne */
 --White: hsl(0, 0%, 100%);
 
 
@@ -27,24 +29,24 @@
 
 /************ Backgrounds ************/
 
---LightGray : #e6e6e6; /* (main background) */
---GrayishRed : #d1cccc; /* (toggle background, keypad background) */
---VeryLightGray : #ededed; /* (screen background) */
+--mainBackgroundTwo : #e6e6e6; /* (LightGray) */
+--keypadToggleBackgroundTwo : #d1cccc; /* (GrayishRed) */
+--screenBackgroundTwo  : #ededed; /* (VeryLightGray) */
 
 /*********** Keys ************/
 
---DarkModerateCyan : #377f86; /* (key background) */
---VeryDarkCyan : #1b5f65; /* (key shadow) */
+--keyBackgroundTwo : #377f86; /* (DarkModerateCyan) */
+--keyShadowTwo : #1b5f65; /* (VeryDarkCyan) */
 
---Orange : #ca5502; /* (key background, toggle) */
---DarkOrange : #893901; /* (key shadow) */
+--keyBackgroundToggleTwo : #ca5502; /* (Orange) */
+--keyShadowTwo : #893901; /* (DarkOrange) */
 
---LightGrayishYellow : #e5e4e1; /* (key background) */
---DarkGrayishOrange : #a69d91; /* (key shadow) */
+--keyBackgroundTwo : #e5e4e1; /* (LightGrayishYellow) */
+--keyShadowTwo : #a69d91; /* (DarkGrayishOrange) */
 
 /************ Text ************/
 
---VeryDarkGrayishYellow: #35352c;
+--textTwo: #35352c; /* VeryDarkGrayishYellow */
 --White : #ffffff; /* (text) */
 
 
@@ -52,23 +54,35 @@
 
 /************ Backgrounds ************/
 
---VeryDarkViolet : #160628; /* (main background) */
---VeryDarkViolet : #1d0934; /* (toggle background, keypad background, screen background) */
+--mainBackgroundThree  : #160628; /* (VeryDarkViolet) */
+--toggleKeypadScreenBackgroundThree : #1d0934; /* (VeryDarkViolet) */
 
 /*********** Keys ************/
 
---DarkViolet : #58077d; /* (key background) */
---VividMagenta : #bc15f4; /* (key shadow) */
+--keyBackgroundThree : #58077d; /* (DarkViolet) */
+--keyShadowThree : #bc15f4; /* (VividMagenta) */
 
---PureCyan : #00e0d1; /* (key background, toggle) */
---SoftCyan : #6cf9f2; /* (key shadow) */
+--keyToggleBackgroundThree : #00e0d1; /* (PureCyan) */
+--keyShadowThree : #6cf9f2; /* (SoftCyan) */
 
---VeryDarkViolet : #341c4f; /* (key background) */
---DarkMagenta : #871c9c; /* (key shadow) */
+--keyBackgroundThree : #341c4f; /* ( VeryDarkViolet) */
+--keyShadowThree : #871c9c; /* (DarkMagenta) */
 
 /************ Text ************/
 
---LightYellow: #ffe53d; /*  */
---VeryDarkBlue: #1b2428; /*  */
+--textThree: #ffe53d; /* (LightYellow) */
+--equalthree: #1b2428; /* (VeryDarkBlue) */
 --White : #ffffff; /* (text) */
+}
+
+
+/* Reset Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--mainBackground);
 }
