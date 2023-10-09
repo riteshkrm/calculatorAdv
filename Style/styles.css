@@ -1,0 +1,74 @@
+/************ Theme 1 ************/
+
+/************ Backgrounds ************/
+:root{
+--VeryDarkDesaturatedBlue : #3a4764; /* (main background) */
+--VeryDarkDesaturatedBlue : #232c43; /* (toggle background, keypad background) */
+--VeryDarkDesaturatedBlue : #182034; /* (screen background) */
+
+/*********** Keys ************/
+
+--DesaturatedDarkBlue : #637097; /* (key background) */
+--DesaturatedDarkBlue : #404e72; /* (key shadow) */
+
+--Red : #d03f2f; /* (key background, toggle) */
+--DarkRed : #93261a; /* (key shadow) */
+
+--LightGrayishOrange : #eae3dc; /* (key background) */
+--GrayishOrange : #b4a597; /* (key shadow) */
+
+/************ Text ************/
+
+--VeryDarkGrayishBlue: #444b5a;
+--White: hsl(0, 0%, 100%);
+
+
+/************ Theme 2 ************/
+
+/************ Backgrounds ************/
+
+--LightGray : #e6e6e6; /* (main background) */
+--GrayishRed : #d1cccc; /* (toggle background, keypad background) */
+--VeryLightGray : #ededed; /* (screen background) */
+
+/*********** Keys ************/
+
+--DarkModerateCyan : #377f86; /* (key background) */
+--VeryDarkCyan : #1b5f65; /* (key shadow) */
+
+--Orange : #ca5502; /* (key background, toggle) */
+--DarkOrange : #893901; /* (key shadow) */
+
+--LightGrayishYellow : #e5e4e1; /* (key background) */
+--DarkGrayishOrange : #a69d91; /* (key shadow) */
+
+/************ Text ************/
+
+--VeryDarkGrayishYellow: #35352c;
+--White : #ffffff; /* (text) */
+
+
+/************ Theme 3 ************/
+
+/************ Backgrounds ************/
+
+--VeryDarkViolet : #160628; /* (main background) */
+--VeryDarkViolet : #1d0934; /* (toggle background, keypad background, screen background) */
+
+/*********** Keys ************/
+
+--DarkViolet : #58077d; /* (key background) */
+--VividMagenta : #bc15f4; /* (key shadow) */
+
+--PureCyan : #00e0d1; /* (key background, toggle) */
+--SoftCyan : #6cf9f2; /* (key shadow) */
+
+--VeryDarkViolet : #341c4f; /* (key background) */
+--DarkMagenta : #871c9c; /* (key shadow) */
+
+/************ Text ************/
+
+--LightYellow: #ffe53d; /*  */
+--VeryDarkBlue: #1b2428; /*  */
+--White : #ffffff; /* (text) */
+}
