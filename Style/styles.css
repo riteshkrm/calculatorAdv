@@ -18,19 +18,19 @@
     --keyShadowOne: #404e72;
     /* (DesaturatedDarkBlue ) */
 
-    --keyBackgroundOne: #d03f2f;
+    --keyBackgroundRedOne: #d03f2f;
     /* (Red) */
     --toggleBackgroundRedOne: #d03f2f;
     /* (Red) */
-    --keyShadowOne: #93261a;
+    --keyShadowOneRed: #93261a;
     /* (DarkRed) */
 
-    --keyBackgroundOne: #eae3dc;
+    --keyBackgroundOneLight: #eae3dc;
     /* (LightGrayishOrange */
-    --keyShadowOne: #b4a597;
+    --keyShadowOneGray: #b4a597;
     /* (GrayishOrange ) */
 
-    /************ Text ************/
+    /************ Text ************/ 
 
     --textOne: #444b5a;
     /* VeryDarkGrayishBlueOne */
@@ -169,6 +169,14 @@ body {
     justify-content:space-around;
 }
 
+.roundBox span:nth-child(2){
+    background-color: var(--keyBackgroundToggleTwo);
+}
+
+.roundBox span:nth-child(3){
+    background-color: var(--keyToggleBackgroundThree);
+}
+
 .dot {
     height: 13px;
     width: 13px;
@@ -195,7 +203,7 @@ body {
 
 .keypadSection{
     min-width: 25rem;
-    height: 22rem;
+    height: 23rem;
     background-color: var(--keypadBackgroundOne);
     border-radius: 10px;
 }
@@ -214,7 +222,7 @@ body {
 .button {
     cursor: pointer;
     font-size: 2rem;
-    background-color: var(--keyBackgroundOne);
+    background-color: var(--keyBackgroundOneLight);
     color: var(--textOne);
     width: 4.5rem;
     height: 3rem;
@@ -222,11 +230,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 5px  var(--keyShadowOne);
+    box-shadow: 0 3px  var(--keyShadowOneGray);
+}
+
+.button:hover{
+    background-color: var(--White);
 }
 
 .btn{
-    height: 2rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    box-shadow: 0 3px  var(--keyShadowOne);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .keypadLastRow{
@@ -234,4 +253,27 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.buttonEqule{
+    background-color: var(--toggleBackgroundRedOne);
+    box-shadow: 0 3px  var(--keyShadowOneRed);
+}
+
+.buttonReset,
+.del{
+    background-color: var(--mainBackgroundOne);
+    color: var(--White);
+    font-size: 1.5rem;
+    box-shadow: 0 3px  var(--textOne);
+}
+
+.btn:hover{
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+}
+
+.del:hover{
+    background-color: var(--mainBackgroundOne);
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
 }
