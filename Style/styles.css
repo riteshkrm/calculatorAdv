@@ -199,6 +199,11 @@ body {
     background-color: var(--screenBackgroundOne);
     margin: 2rem 0;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1rem;
+    font-size: 2rem;
 }
 
 .keypadSection{
@@ -212,7 +217,7 @@ body {
     padding: 1rem;
 }
 
-.keybadButtons{
+.keypadButtons{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
@@ -231,6 +236,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 3px  var(--keyShadowOneGray);
+    border: none;
 }
 
 .button:hover{
@@ -246,6 +252,8 @@ body {
     justify-content: center;
     border-radius: 10px;
     text-transform: uppercase;
+    border: none;
+    cursor: pointer;
 }
 
 .keypadLastRow{
@@ -253,7 +261,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 1.5rem;
-    cursor: pointer;
 }
 
 .buttonEqule{
