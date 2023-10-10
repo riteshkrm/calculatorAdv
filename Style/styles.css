@@ -55,7 +55,7 @@
     --keyShadowTwo: #1b5f65;
     /* (VeryDarkCyan) */
 
-    --keyBackgroundToggleTwo: #ca5502;
+    --keyBackgroundToggleTwoOrange: #ca5502;
     /* (Orange) */
     --keyShadowTwo: #893901;
     /* (DarkOrange) */
@@ -170,7 +170,7 @@ body {
 }
 
 .roundBox span:nth-child(2){
-    background-color: var(--keyBackgroundToggleTwo);
+    background-color: var(--keyBackgroundToggleTwoOrange);
 }
 
 .roundBox span:nth-child(3){
