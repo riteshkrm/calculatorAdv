@@ -37,7 +37,7 @@
     --White: hsl(0, 0%, 100%);
 
 
-    /************ Theme 2 ************/
+     /************ Theme 2 ************/
 
     /************ Backgrounds ************/
 
@@ -50,19 +50,19 @@
 
     /*********** Keys ************/
 
-    --keyBackgroundCyanTwo: #377f86;
+    --keyBackgroundTwoDarkModerateCyan: #377f86;
     /* (DarkModerateCyan) */
-    --keyShadowCyanTwo: #1b5f65;
+    --keyShadowTwoVeryDarkCyan: #1b5f65;
     /* (VeryDarkCyan) */
 
     --keyBackgroundToggleTwoOrange: #ca5502;
     /* (Orange) */
-    --keyShadowTwo: #893901;
+    --keyShadowTwoDarkOrange: #893901;
     /* (DarkOrange) */
 
-    --keyBackgroundTwo: #e5e4e1;
+    --keyBackgroundTwoLightGrayishYellow: #e5e4e1;
     /* (LightGrayishYellow) */
-    --keyShadowTwo: #a69d91;
+    --keyShadowTwoDarkGrayishOrange: #a69d91;
     /* (DarkGrayishOrange) */
 
     /************ Text ************/
@@ -73,7 +73,7 @@
     /* (text) */
 
 
-    /************ Theme 3 ************/
+     /************ Theme 3 ************/
 
     /************ Backgrounds ************/
 
@@ -84,19 +84,19 @@
 
     /*********** Keys ************/
 
-    --keyBackgroundThree: #58077d;
+    --keyBackgroundThreeDarkViolet: #58077d;
     /* (DarkViolet) */
-    --keyShadowThree: #bc15f4;
+    --keyShadowThreeVividMagenta: #bc15f4;
     /* (VividMagenta) */
 
     --keyToggleBackgroundThree: #00e0d1;
     /* (PureCyan) */
-    --keyShadowThree: #6cf9f2;
+    --keyShadowThreeSoftCyan: #6cf9f2;
     /* (SoftCyan) */
 
-    --keyBackgroundThree: #341c4f;
+    --keyBackgroundThreeVeryDarkViolet: #341c4f;
     /* ( VeryDarkViolet) */
-    --keyShadowThree: #871c9c;
+    --keyShadowThreeDarkMagenta: #871c9c;
     /* (DarkMagenta) */
 
     /************ Text ************/
@@ -127,6 +127,99 @@ body {
     place-items: center;
     place-content: center;
 
+}
+
+.themeSwitchTwo{
+    background-color: var(--mainBackgroundTwo);
+    color: var(--textTwo);
+}
+
+.themeSwitchTwo .roundBox{
+    background-color: var(--keypadToggleBackgroundTwo);
+}
+
+.themeSwitchTwo .displayValue{
+    background-color: var(--screenBackgroundTwo);
+}
+
+.themeSwitchTwo .keypadSection{
+    background-color: var(--keypadToggleBackgroundTwo);
+}
+
+.themeSwitchTwo .button{
+    background-color: var(--keyBackgroundTwoLightGrayishYellow);
+    box-shadow: 0 3px var(--keyShadowTwoDarkGrayishOrange);
+    color: var(--textTwo);
+}
+
+
+.themeSwitchTwo .buttonReset{
+   background-color: var(--keyBackgroundTwoDarkModerateCyan);
+   box-shadow: 0 3px var(--keyShadowTwoVeryDarkCyan);
+}
+
+.themeSwitchTwo .del{
+    background-color: var(--keyBackgroundTwoDarkModerateCyan);
+    box-shadow: 0 3px var(--keyShadowTwoVeryDarkCyan);
+    color: var(--White);
+}
+
+.themeSwitchTwo .del:hover{
+    background-color: var(--keyBackgroundTwoDarkModerateCyan);
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+}
+
+.themeSwitchTwo .buttonEqual{
+    background-color: var(--keyBackgroundToggleTwoOrange);
+    box-shadow: 0 3px var(--keyShadowTwoDarkOrange);
+}
+
+.themeSwitchThree{
+    background-color: var(--mainBackgroundThree);
+    color: var(--textThree);
+}
+
+.themeSwitchThree .roundBox{
+    background-color: var(--toggleKeypadScreenBackgroundThree);
+}
+
+.themeSwitchThree .displayValue{
+    background-color: var(--toggleKeypadScreenBackgroundThree);
+}
+
+.themeSwitchThree .keypadSection{
+    background-color: var(--toggleKeypadScreenBackgroundThree);
+}
+
+.themeSwitchThree .button{
+    background-color: var(--keyBackgroundThreeVeryDarkViolet);
+    box-shadow: 0 3px var(--keyShadowThreeDarkMagenta);
+    color: var(--textThree);
+}
+
+.themeSwitchThree .button:hover {
+    background-color: var(--keyShadowThreeVividMagenta);
+}
+
+.themeSwitchThree .buttonReset{
+    background-color: var(--keyBackgroundThreeDarkViolet);
+    box-shadow: 0 3px var(--keyShadowThreeVividMagenta);
+}
+
+.themeSwitchThree .del{
+    background-color: var(--keyBackgroundThreeDarkViolet);
+    box-shadow: 0 3px var(--keyShadowThreeVividMagenta);
+}
+
+.themeSwitchThree .del:hover{
+    background-color: var(--keyBackgroundThreeDarkViolet);
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+}
+
+.themeSwitchThree .buttonEqual{
+    background-color: var(--keyToggleBackgroundThree);
+    box-shadow: 0 3px var(--keyShadowThreeSoftCyan);
+    color: var(--equalthree);
 }
 
 .theme {
@@ -186,6 +279,8 @@ body {
     text-align: left;
     display: inline-block;
 }
+
+
 
 .numbers {
     display: flex;
@@ -263,7 +358,7 @@ body {
     margin-top: 1.5rem;
 }
 
-.buttonEqule {
+.buttonEqual {
     background-color: var(--toggleBackgroundRedOne);
     box-shadow: 0 3px var(--keyShadowOneRed);
     color: var(--White);
@@ -301,7 +396,6 @@ body {
     .mainContainer {
         margin: 2rem;
         max-width: 20rem;
-        /* height: 100vh; */
         /* border: 5px solid red; */
     }
 
