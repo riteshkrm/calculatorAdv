@@ -1,28 +1,51 @@
 const body = document.querySelector("body");
-const calcAndToggle = document.querySelector(".calcAndToggle");
-const keypadSection = document.querySelector(".keypadSection");
-const keypadButtons = document.querySelectorAll(".button");
-const resetAndEqual = document.querySelectorAll(".btn");
-const threeDotBack = document.querySelector(".roundBox");
-const displayValue = document.querySelector(".displayValue")
 const themeSwitch = document.querySelectorAll('.dot');
+const buttons = document.querySelectorAll('.one');
+const score = document.querySelector('.score');
+let scoreDisplay = '';
 
-
-for (let i = 0; i < themeSwitch.length; i++){
-    themeSwitch[0].addEventListener('click',(event)=>{
+for (let i = 0; i < themeSwitch.length; i++) {
+    themeSwitch[0].addEventListener('click', (event) => {
         body.classList.remove('themeSwitchTwo')
         body.classList.remove('themeSwitchThree')
     })
 
-    themeSwitch[1].addEventListener('click', (event)=>{
+    themeSwitch[1].addEventListener('click', (event) => {
         body.classList.add('themeSwitchTwo')
         body.classList.remove('themeSwitchThree')
     })
 
-    themeSwitch[2].addEventListener('click', (event)=>{
+    themeSwitch[2].addEventListener('click', (event) => {
         body.classList.add('themeSwitchThree')
+        body.classList.remove('themeSwitchTwo')
     })
 }
+
+
+Array.from(buttons).forEach((button) => {
+    button.addEventListener('click', (event) => {
+        const buttonValue = event.target.innerHTML;
+        
+        if (buttonValue === '=') {
+            try {
+                scoreDisplay = eval(scoreDisplay);
+                score.textContent = scoreDisplay;
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        } else if (buttonValue === 'reset') {
+            scoreDisplay = '';
+            score.textContent = scoreDisplay;
+        } else if (buttonValue === 'DEL') {
+            scoreDisplay = scoreDisplay.slice(0, -1);
+            score.textContent = scoreDisplay;
+        } else {
+            scoreDisplay = scoreDisplay + buttonValue;
+            score.textContent = scoreDisplay;
+        }
+    });
+});
+
 
 // for (let index = 0; index < themeSwitch.length; index++) {
 
@@ -69,30 +92,25 @@ for (let i = 0; i < themeSwitch.length; i++){
 //         keypadSection.style.backgroundColor = "#1d0934";
 //     });
 
-    // themeSwitch[0].addEventListener('click', (event) => {
-    //     const link = document.createElement('link');
-    //     link.href = './Style/styles.css';
-    //     link.rel = 'stylesheet';
-    //     document.getElementsByTagName('head')[0].appendChild(link);
-    // })
+// themeSwitch[0].addEventListener('click', (event) => {
+//     const link = document.createElement('link');
+//     link.href = './Style/styles.css';
+//     link.rel = 'stylesheet';
+//     document.getElementsByTagName('head')[0].appendChild(link);
+// })
 
-    // themeSwitch[1].addEventListener('click', (event) => {
-    //     const link = document.createElement('link');
-    //     link.href = './Style/themeTwo.css';
-    //     link.rel = 'stylesheet';
-    //     document.getElementsByTagName('head')[0].appendChild(link);
-    // })
+// themeSwitch[1].addEventListener('click', (event) => {
+//     const link = document.createElement('link');
+//     link.href = './Style/themeTwo.css';
+//     link.rel = 'stylesheet';
+//     document.getElementsByTagName('head')[0].appendChild(link);
+// })
 
-    // themeSwitch[2].addEventListener('click', (event) => {
-    //     const link = document.createElement('link');
-    //     link.href = './Style/themeThree.css';
-    //     link.rel = 'stylesheet';
-    //     document.getElementsByTagName('head')[0].appendChild(link);
-    // })
+// themeSwitch[2].addEventListener('click', (event) => {
+//     const link = document.createElement('link');
+//     link.href = './Style/themeThree.css';
+//     link.rel = 'stylesheet';
+//     document.getElementsByTagName('head')[0].appendChild(link);
+// })
 
 // }
-
-
-// Add Functionality
-
-
